@@ -1,0 +1,7 @@
+<%- include('partials/navbar') %>
+<h1>All Recipes</h1>
+<ul>
+  <% recipes.forEach(recipe => { %>
+    <li><%= recipe.title %> by <%= recipe.createdBy.username %></li>
+  <% }) %>
+</ul>

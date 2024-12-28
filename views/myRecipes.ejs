@@ -1,0 +1,7 @@
+<%- include('partials/navbar') %>
+<h1>My Recipes</h1>
+<ul>
+  <% recipes.forEach(recipe => { %>
+    <li><%= recipe.title %></li>
+  <% }) %>
+</ul>
